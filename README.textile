@@ -2,15 +2,15 @@ h1. Ring Middleware Index File
 
     (wrap-index-file "/some/route")
 
-Requests to `/some/route` will redirect to `/some/route/`.  Requests to `/some/route/` will return the `index.html` file.
+Requests to @/some/route@ will redirect to @/some/route/@.  Requests to @/some/route/@ will return the @index.html@ file.
 
 h2. Options
 
-h3. `:path`
+h3. @:path@
  
-Specify an alternate path (default is `resources/public`) for static files..
+Specify an alternate path (default is @resources/public@) for static files..
 
-h3. `:index`
+h3. @:index@
 
 Specify an alternate index file (default is `index.html`).
 
