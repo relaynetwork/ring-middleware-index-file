@@ -16,12 +16,12 @@
       (let [uri             (:uri request)
             index-path      (str (:root opts) path-with-slash (:index opts))]
         (cond
+          (= path-with-slash uri)
+          (ring.util.response/file-response index-path)
+
           ;; if the uri does not end in a slash, redirect so it does...
           (= path uri)
           (ring.util.response/redirect (redirect-uri request path-with-slash))
-
-          (= path-with-slash uri)
-          (ring.util.response/file-response index-path)
 
           :else
           (handler request))))))
