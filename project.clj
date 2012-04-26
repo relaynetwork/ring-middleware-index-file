@@ -1,4 +1,4 @@
-(defproject com.relaynetwork/ring-middleware-index-file "1.0.4-SNAPSHOT"
+(defproject com.relaynetwork/ring-middleware-index-file "1.0.4"
   :description "Ring Middleware for serving up an index file."
   :lein-release {:deploy-via :clojars}
   :dependencies [
