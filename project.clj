@@ -1,4 +1,4 @@
-(defproject com.relaynetwork/ring-middleware-index-file "1.0.3-SNAPSHOT"
+(defproject com.relaynetwork/ring-middleware-index-file "1.0.3"
   :description "Ring Middleware for serving up an index file."
   :dependencies [
     [org.clojure/clojure "1.2.1"]
